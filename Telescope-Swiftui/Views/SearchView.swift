@@ -33,9 +33,6 @@ struct SearchView: View {
                                         .accessibilityValue(item.liked ? "Liked" : "")
                                         .accessibilityRotorEntry(id: item.id, in: customRotorNamespace)
                                         .id(item.id)
-                                        .accessibilityCustomContent("Date", item.dateString)
-//                                        .accessibilityCustomContent("Description", item.description ?? "")
-//                                        .accessibilityCustomContent("NASA Center", item.center ?? "")
                                 }
                                 .accessibilityRotor("Liked") {
                                     ForEach(viewModel.imageItems, id: \.id) { item in

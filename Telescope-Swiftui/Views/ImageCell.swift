@@ -41,5 +41,8 @@ struct ImageCell: View {
                 .font(.body)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .accessibilityCustomContent("Date", imageItem.dateString)
+        .accessibilityCustomContent("Description", imageItem.description ?? "")
+        .accessibilityCustomContent("NASA Center", imageItem.center ?? "")
     }
 }
