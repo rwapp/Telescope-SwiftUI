@@ -12,25 +12,13 @@ struct ImageButtons: View {
 
     var body: some View {
         HStack(spacing: 8) {
-            if imageItem.liked {
-                Button {
-                    imageItem.liked.toggle()
-                } label: {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                }
-                .accessibilityLabel("Liked")
-                .accessibilityAddTraits(.isSelected)
-
-            } else {
-                Button {
-                    imageItem.liked.toggle()
-                } label: {
-                    Image(systemName: "heart")
-                        .foregroundColor(.red)
-                }
-                .accessibilityLabel("Like")
+            Button {
+                imageItem.liked.toggle()
+            } label: {
+                Image(systemName: imageItem.liked ? "heart.fill" : "heart")
+                    .foregroundColor(.red)
             }
+            .accessibilityLabel(imageItem.liked ? "Liked" : "Like")
 
             Button {
                 // TODO: perform share

@@ -27,6 +27,9 @@ struct SearchView: View {
                             ForEach(viewModel.imageItems) { item in
                                 ImageCell(imageItem: item)
                             }
+                            .accessibilityElement(children: .combine)
+                            .accessibilityAddTraits(.isButton)
+                            .accessibilityAddTraits(.isImage)
                             .padding(8)
                         }
                     }
