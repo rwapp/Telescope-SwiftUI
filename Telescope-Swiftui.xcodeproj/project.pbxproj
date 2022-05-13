@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5407F122827D04500D83E64 /* Telescope_SwiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407F112827D04500D83E64 /* Telescope_SwiftuiApp.swift */; };
+		B5407F162827D04600D83E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5407F152827D04600D83E64 /* Assets.xcassets */; };
+		B5407F192827D04600D83E64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5407F182827D04600D83E64 /* Preview Assets.xcassets */; };
+		B5407F232827D1FA00D83E64 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407F222827D1FA00D83E64 /* SearchResult.swift */; };
+		B5407F252827D23B00D83E64 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407F242827D23B00D83E64 /* SearchView.swift */; };
+		B5407F272827D28200D83E64 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407F262827D28200D83E64 /* ImageItem.swift */; };
+		B5407F2B2827D92A00D83E64 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407F2A2827D92A00D83E64 /* SearchViewModel.swift */; };
+		B5D8C6E12827E334006BB207 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6DE2827E334006BB207 /* NetworkService.swift */; };
+		B5D8C6E22827E334006BB207 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6DF2827E334006BB207 /* SearchService.swift */; };
+		B5D8C6E32827E334006BB207 /* FetchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6E02827E334006BB207 /* FetchImage.swift */; };
+		B5D8C6E52827EAA3006BB207 /* FavouriteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6E42827EAA3006BB207 /* FavouriteStorage.swift */; };
+		B5D8C6E728298F4D006BB207 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6E628298F4D006BB207 /* ImageCell.swift */; };
+		B5D8C6E928298FA6006BB207 /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6E828298FA6006BB207 /* ImageDetail.swift */; };
+		B5D8C6EB282990E7006BB207 /* ImageButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6EA282990E7006BB207 /* ImageButtons.swift */; };
+		B5D8C6ED2829952D006BB207 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8C6EC2829952D006BB207 /* ImageViewer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5407F0E2827D04500D83E64 /* Telescope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telescope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5407F112827D04500D83E64 /* Telescope_SwiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telescope_SwiftuiApp.swift; sourceTree = "<group>"; };
+		B5407F152827D04600D83E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5407F182827D04600D83E64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5407F222827D1FA00D83E64 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		B5407F242827D23B00D83E64 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B5407F262827D28200D83E64 /* ImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		B5407F2A2827D92A00D83E64 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		B5D8C6DE2827E334006BB207 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B5D8C6DF2827E334006BB207 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		B5D8C6E02827E334006BB207 /* FetchImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchImage.swift; sourceTree = "<group>"; };
+		B5D8C6E42827EAA3006BB207 /* FavouriteStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteStorage.swift; sourceTree = "<group>"; };
+		B5D8C6E628298F4D006BB207 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		B5D8C6E828298FA6006BB207 /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
+		B5D8C6EA282990E7006BB207 /* ImageButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtons.swift; sourceTree = "<group>"; };
+		B5D8C6EC2829952D006BB207 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5407F0B2827D04500D83E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5407F052827D04500D83E64 = {
+			isa = PBXGroup;
+			children = (
+				B5407F102827D04500D83E64 /* Telescope-Swiftui */,
+				B5407F0F2827D04500D83E64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5407F0F2827D04500D83E64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5407F0E2827D04500D83E64 /* Telescope.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5407F102827D04500D83E64 /* Telescope-Swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				B5407F112827D04500D83E64 /* Telescope_SwiftuiApp.swift */,
+				B5D8C6DD2827E328006BB207 /* Network */,
+				B5407F292827D91A00D83E64 /* View Models */,
+				B5407F282827D36300D83E64 /* Views */,
+				B5407F212827D1F200D83E64 /* Models */,
+				B5407F152827D04600D83E64 /* Assets.xcassets */,
+				B5407F172827D04600D83E64 /* Preview Content */,
+			);
+			path = "Telescope-Swiftui";
+			sourceTree = "<group>";
+		};
+		B5407F172827D04600D83E64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5407F182827D04600D83E64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5407F212827D1F200D83E64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8C6E42827EAA3006BB207 /* FavouriteStorage.swift */,
+				B5407F222827D1FA00D83E64 /* SearchResult.swift */,
+				B5407F262827D28200D83E64 /* ImageItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5407F282827D36300D83E64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5407F242827D23B00D83E64 /* SearchView.swift */,
+				B5D8C6E828298FA6006BB207 /* ImageDetail.swift */,
+				B5D8C6EC2829952D006BB207 /* ImageViewer.swift */,
+				B5D8C6EA282990E7006BB207 /* ImageButtons.swift */,
+				B5D8C6E628298F4D006BB207 /* ImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5407F292827D91A00D83E64 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5407F2A2827D92A00D83E64 /* SearchViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B5D8C6DD2827E328006BB207 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8C6E02827E334006BB207 /* FetchImage.swift */,
+				B5D8C6DE2827E334006BB207 /* NetworkService.swift */,
+				B5D8C6DF2827E334006BB207 /* SearchService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5407F0D2827D04500D83E64 /* Telescope-Swiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5407F1C2827D04600D83E64 /* Build configuration list for PBXNativeTarget "Telescope-Swiftui" */;
+			buildPhases = (
+				B5407F0A2827D04500D83E64 /* Sources */,
+				B5407F0B2827D04500D83E64 /* Frameworks */,
+				B5407F0C2827D04500D83E64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Telescope-Swiftui";
+			productName = "Telescope-Swiftui";
+			productReference = B5407F0E2827D04500D83E64 /* Telescope.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5407F062827D04500D83E64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B5407F0D2827D04500D83E64 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B5407F092827D04500D83E64 /* Build configuration list for PBXProject "Telescope-Swiftui" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5407F052827D04500D83E64;
+			productRefGroup = B5407F0F2827D04500D83E64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5407F0D2827D04500D83E64 /* Telescope-Swiftui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5407F0C2827D04500D83E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5407F192827D04600D83E64 /* Preview Assets.xcassets in Resources */,
+				B5407F162827D04600D83E64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5407F0A2827D04500D83E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D8C6E32827E334006BB207 /* FetchImage.swift in Sources */,
+				B5D8C6E52827EAA3006BB207 /* FavouriteStorage.swift in Sources */,
+				B5407F272827D28200D83E64 /* ImageItem.swift in Sources */,
+				B5407F2B2827D92A00D83E64 /* SearchViewModel.swift in Sources */,
+				B5D8C6E928298FA6006BB207 /* ImageDetail.swift in Sources */,
+				B5407F232827D1FA00D83E64 /* SearchResult.swift in Sources */,
+				B5407F252827D23B00D83E64 /* SearchView.swift in Sources */,
+				B5D8C6EB282990E7006BB207 /* ImageButtons.swift in Sources */,
+				B5D8C6E22827E334006BB207 /* SearchService.swift in Sources */,
+				B5D8C6E12827E334006BB207 /* NetworkService.swift in Sources */,
+				B5D8C6ED2829952D006BB207 /* ImageViewer.swift in Sources */,
+				B5407F122827D04500D83E64 /* Telescope_SwiftuiApp.swift in Sources */,
+				B5D8C6E728298F4D006BB207 /* ImageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B5407F1A2827D04600D83E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5407F1B2827D04600D83E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5407F1D2827D04600D83E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telescope-Swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = K55J7MA3F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilea11y.Telescope-Swiftui";
+				PRODUCT_NAME = Telescope;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5407F1E2827D04600D83E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telescope-Swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = K55J7MA3F2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilea11y.Telescope-Swiftui";
+				PRODUCT_NAME = Telescope;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5407F092827D04500D83E64 /* Build configuration list for PBXProject "Telescope-Swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5407F1A2827D04600D83E64 /* Debug */,
+				B5407F1B2827D04600D83E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5407F1C2827D04600D83E64 /* Build configuration list for PBXNativeTarget "Telescope-Swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5407F1D2827D04600D83E64 /* Debug */,
+				B5407F1E2827D04600D83E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5407F062827D04500D83E64 /* Project object */;
+}
