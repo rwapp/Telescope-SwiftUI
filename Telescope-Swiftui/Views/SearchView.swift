@@ -26,10 +26,10 @@ struct SearchView: View {
                         LazyVStack {
                             ForEach(viewModel.imageItems) { item in
                                 ImageCell(imageItem: item)
+                                    .accessibilityElement(children: .combine)
+                                    .accessibilityAddTraits(.isButton)
+                                    .accessibilityAddTraits(.isImage)
                             }
-                            .accessibilityElement(children: .combine)
-                            .accessibilityAddTraits(.isButton)
-                            .accessibilityAddTraits(.isImage)
                             .padding(8)
                         }
                     }
