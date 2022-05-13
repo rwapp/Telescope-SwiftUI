@@ -29,6 +29,7 @@ struct SearchView: View {
                                     .accessibilityElement(children: .combine)
                                     .accessibilityAddTraits(.isButton)
                                     .accessibilityAddTraits(.isImage)
+                                    .accessibilityValue(item.liked ? "Liked" : "")
                             }
                             .padding(8)
                         }
