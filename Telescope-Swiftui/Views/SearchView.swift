@@ -22,16 +22,29 @@ struct SearchView: View {
         NavigationView {
             Group {
                 if query.count > 0 {
-                    ScrollView {
-                        LazyVStack {
-                            ForEach(viewModel.imageItems) { item in
-                                ImageCell(imageItem: item)
-                                    .accessibilityElement(children: .combine)
-                                    .accessibilityAddTraits(.isButton)
-                                    .accessibilityAddTraits(.isImage)
-                                    .accessibilityValue(item.liked ? "Liked" : "")
+                    ScrollViewReader { scrollView in
+                        ScrollView {
+                            LazyVStack {
+                                ForEach(viewModel.imageItems) { item in
+                                    ImageCell(imageItem: item)
+                                        .accessibilityElement(children: .combine)
+                                        .accessibilityAddTraits(.isButton)
+                                        .accessibilityAddTraits(.isImage)
+                                        .accessibilityValue(item.liked ? "Liked" : "")
+                                        .accessibilityRotorEntry(id: item.id, in: customRotorNamespace)
+                                        .id(item.id)
+                                }
+                                .accessibilityRotor("Liked") {
+                                    ForEach(viewModel.imageItems, id: \.id) { item in
+                                        if item.liked {
+                                            AccessibilityRotorEntry(item.title, item.id, in: customRotorNamespace) {
+                                                scrollView.scrollTo(item.id)
+                                            }
+                                        }
+                                    }
+                                }
+                                .padding(8)
                             }
-                            .padding(8)
                         }
                     }
                 } else {
